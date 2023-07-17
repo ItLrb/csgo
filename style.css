@@ -268,7 +268,11 @@ h1 {
     position: absolute;
     padding-right: 7px;
 }
+
+
+
 /*    INFORMAÇÕES      */
+
 
 .itens-info:hover {
     scale: 1.1;
@@ -297,6 +301,7 @@ h1 {
     background-color: #696969; /* Cor do polegar da barra de rolagem */
     border-radius: 20px; /* Raio da borda do polegar da barra de rolagem */
 }
+
 
 .text-news {
     position: absolute;
@@ -342,7 +347,9 @@ main img {
 
 .vita {
     position: relative;
-    right: 225px;
+    right: 125px;
+    top: 60px;
+    padding-top: 10px;
 }
 
 /*     PROMOÇÕES      */
@@ -356,7 +363,6 @@ main img {
     left: 100px;
     top: 570px;
     color: white;
-    
 }
 
 /*              ABAS               */
@@ -430,7 +436,7 @@ main img {
     top: 120px;
     white-space: nowrap;
     display: block;
-} span > strong {
+} #cupons-div span > strong {
     background-color: #0f920bda;
     color: white;
     top: 5px;
