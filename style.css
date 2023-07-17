@@ -1,0 +1,517 @@
+body {
+    background-color: rgb(63, 63, 61);
+    overflow: hidden;
+}
+.sidebar {
+    position: absolute;
+    background-color: rgb(46, 46, 46);
+    left: 2px;
+    top: 1px;
+    width: 60px;
+    height: 99.7%;
+}
+
+/* ICONS SIDE BAR-LEFT */
+
+.side-icons i {
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+    .fa-house {
+        top: 7px;
+        left: -46px;
+        padding: 15.25px;
+        font-size: 25px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        /* border: solid black;
+        border-width: 3px;
+         */
+    }
+    .fa-circle-play {
+        top: 7px;
+        left: -46px;
+        padding: 13.7px;
+        font-size: 33px;
+        border-top: 1px solid rgba(255, 255, 255,.1);
+        /* border: solid black;
+        border-width: 3px;
+         */
+    }
+    .fa-tower-broadcast {
+        top: 7px;
+        left: -46px;
+        padding: 17.25px;
+        border-bottom: 1px solid rgba(36, 36, 36, 0.788);
+        font-size: 22px;
+    }
+    .fa-suitcase {
+        top: 7px;
+        left: -46px;
+        padding: 17.25px;
+        font-size: 25px;
+        border-top: 1px solid rgba(255, 255, 255,.1);
+    }
+    .fa-tv {
+        top: 7px;
+        left: -46px;
+        padding: 18px;
+        font-size: 22px;
+    }
+    
+    .fa-gear {
+        top: 7px;
+        left: -46px;
+        padding: 22px;
+        font-size: 21px;
+    }
+    .fa-power-off {
+        top: 320px;
+        left: -55px;
+        padding: 15px;
+        font-size: 30px;
+    }
+        .side-icons button {
+            background-color: transparent;
+            border-color: transparent;
+        }
+/*  -------------------------------------------------------- */
+
+/*       SIDE BAR-RIGHT         */
+
+.sidebar-right {
+    position: absolute;
+    background-color: rgb(46, 46, 46);
+    right: 1px;
+    top: 1px;
+    width: 70px;
+    height: 99.7%;
+    z-index: 1;
+} 
+/*     SIDE BAR EXPANDED       */
+
+.sidebar-right.expanded {
+    width: 270px;
+}   .sidebar-right.expanded .fa-user-secret {
+        position: relative;
+        margin: auto;
+        left: 15px;
+        top: 10px;   
+    }
+
+.sidebar-right.expanded .fa-angle-up {
+    position: relative;
+    left: 100px;
+    top: 65px;
+}   .sidebar-right.expanded .fa-angle-right {
+        position: relative;
+        left: -55px;
+        top: 125px;
+        padding: 6px 53px;
+        font-size: 25px;
+    }   
+    .sidebar-right.expanded .fa-user {
+            position: relative;
+            left: 2000px;
+            top: 160px;
+    } 
+        .sidebar-right.expanded .fa-user2 {
+            position: relative;
+            left: 2000px;
+        }   
+            .sidebar-right.expanded .fa-circle-info {
+                position: relative;
+                top: 325px;
+                left: -100px;
+            }
+
+
+/*       TEXTO BARRA LATERAL EXPANDIDA       */
+
+.sidebar-text, .sidebar-friends {
+    color: black;
+    display: none; /* Oculta o texto inicialmente */
+}
+    
+.sidebar-right.expanded .sidebar-text {
+    position: relative;    
+    font-family: Arial, Helvetica, sans-serif;
+    left: 75px;
+    top: -85px;
+    color: rgb(255, 255, 255);
+    display: inline-block; /* Exibe o texto quando a barra lateral estiver expandida */
+}
+.sidebar-right.expanded .sidebar-friends {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 60px;
+    top: 265px;
+    color: rgba(255, 255, 255, 0.479);
+    display: inline-block;
+}
+
+
+
+
+/*     CONFIG GERAL SIDEBAR RIGHT      */
+
+.sidebar-right i {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+    .fa-user-secret {
+        font-size: 40px;
+        border: 1.75px solid black;
+        padding: 5px;
+        top: 7px;
+        right: -10px;
+    }
+        .fa-angle-up {
+            top: 20px;
+            font-size: 35px;
+            right: -18px;
+        }
+        .fa-angle-right {
+            top: 50px;
+            font-size: 20px;
+            right: -6.5px;
+            border-top: 2px solid rgba(24, 24, 24, 0.801);
+            border-bottom: 2px solid rgba(24, 24, 24, 0.801);
+            border-radius: 4px;
+            background-color: rgba(24, 24, 24, 0.801);
+            padding-right: 22px;
+            padding-left: 22px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+            .fa-user {
+                top: 70px;
+                right: -1px;
+                padding: 19px;
+                font-size: 35px;
+                border-top: 1px solid rgba(255, 255, 255,.1);
+            }
+            .fa-user2 {
+                top: 15px;
+                right: -11px;
+                padding: 25px;
+                font-size: 20px;
+                border-bottom: 3px solid white;
+                border-radius: 5px;
+                border-radius: 5px;
+            }
+        .fa-circle-info {
+            color: rgba(255, 255, 255, 0.479);
+            top: 5em;
+            right: -21px;
+            font-size: 30px;
+        }
+
+/*  CONFIRMAÇÃO DE SAIDA*/
+
+#exit {
+    position: relative;
+    display: none;
+    left: 550px;
+    top: -200px;
+    z-index: 3;
+}
+.exit p, h1{
+    position: relative;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:  rgb(255, 255, 255);
+    top: -20px;
+    margin-left: 7px;
+}
+
+h1 {
+    background-color: rgb(15, 15, 15);
+    padding-left: 20px;
+    top: -75px;
+    left: -18px;
+    width: 371px;
+    border-right: 1px solid rgba(255, 255, 255,.1);
+}
+
+.exit p {
+    font-size: 20px;
+    top: -60px;
+}
+.exit {
+    background-color: rgb(46, 46, 46);
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding: 10px;
+    width: 370px;
+    height: 110px;
+    border-right: 1px solid rgba(255, 255, 255,.1);
+}
+.exit button {
+    position: relative;
+    top: -80px;
+    left: 250px;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+.exit button:hover {
+    background-color: rgb(15, 15, 15);
+}
+.sim {
+    position: absolute;
+    padding-right: 7px;
+}
+/*    INFORMAÇÕES      */
+
+.itens-info:hover {
+    scale: 1.1;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.infos {
+    position: absolute;
+    background-color: rgba(105, 105, 105, 0.13);
+    border: 1px solid rgba(0, 0, 0, 0);
+    overflow: auto;
+    overflow-x: hidden;
+    z-index: 2;
+    width: 500px;
+    height: 540px;
+    left: 100px;
+    top: 10px;
+    color: white;
+}
+.infos::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+  }
+
+.infos::-webkit-scrollbar-thumb {
+    background-color: #696969; /* Cor do polegar da barra de rolagem */
+    border-radius: 20px; /* Raio da borda do polegar da barra de rolagem */
+}
+
+.text-news {
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 7px;
+    color: rgba(230, 230, 230, 0.589);
+}
+main img {
+    margin-left: 16px;
+    margin-right: 10px;
+    float: left;
+}
+.date {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.849);
+}
+.news-title {
+    font-family: serif;
+    font-weight: normal;
+    position: absolute;
+    margin-top: 5px;
+    font-size: 16px;
+    margin-left: 7px;
+}
+.leia-mais {
+    text-decoration: none;
+    position: relative;
+    top: 50px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif; 
+    color: white;
+    text-decoration: white;
+}   .leia-mais:visited {
+        text-decoration: none;
+        color: white;
+    }   .leia-mais:hover {
+            color: rgba(23, 23, 99, 0.911);
+        }
+
+
+.vita {
+    position: relative;
+    right: 225px;
+}
+
+/*     PROMOÇÕES      */
+
+.sales {
+    position: absolute;
+    background-color: rgba(105, 105, 105, 0.13);
+    z-index: 2;
+    width: 500px;
+    height: 180px;
+    left: 100px;
+    top: 570px;
+    color: white;
+    
+}
+
+/*              ABAS               */
+
+.abas a {
+    text-decoration: none;
+    color: white;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 10px;
+}
+.abas a:active {
+    text-decoration: underline;
+}
+
+    #loja {
+        position: relative;
+        top: -37px;
+        left: 70px;
+    }
+    #keys {
+        position: relative;
+        top: -73px;
+        left: 125px;
+    }
+    #mercado {
+        position: relative;
+        top: -110px;
+        left: 180px;
+    }
+
+
+/*         LOJA          */
+
+#loja-div {
+    display: none;
+} #loja-div .valor {
+        position: absolute;
+        top: 16px;
+    } 
+#pct-anubis {
+        position: absolute;
+        top: 120px;
+        margin-left: 20px;
+    }   #pct-anubis > .valor {
+            position: absolute;
+            top: 10px;
+            margin-top: 7px;
+        }
+#pct-mirage {
+    position: absolute;
+    top: 120px;
+    margin-left: 125px;
+}
+#pct-inferno {
+    position: absolute;
+    top: 120px;
+    margin-left: 240px;
+}
+#pct-cobble {
+    position: absolute;
+    top: 120px;
+    margin-left: 350px;
+}
+
+
+/*       CUPONS         */
+
+#cupons-div {
+    margin-left: 20px;
+    position: absolute;
+    top: 120px;
+    white-space: nowrap;
+    display: block;
+} span > strong {
+    background-color: #0f920bda;
+    color: white;
+    top: 5px;
+    position: relative;
+    font-size: 16px;
+    padding: 2.75px;
+}
+abbr {
+    text-decoration: none;
+}
+.valor {
+    color: #169210;
+    font-weight: bold;
+    position: absolute;
+    padding-right: 10px;
+    top: 20px;
+            } #soundtrak {
+                position: absolute;
+                top: 0px;
+                left: 150px;
+                padding-right: 10px;
+                    } abbr > strong {
+                    margin-right: 8px;
+                } #feral-sticker {
+                    position: absolute;
+                    top: 0px;
+                    left: 325px;
+            } 
+
+
+/*       KEYS        */
+
+#keys-div {
+    display: none;
+}
+
+#clutch-key {
+    position: absolute;
+    top: 120px;
+    margin-left: 20px;
+}
+    #spc2-key {
+        position: absolute;
+        top: 120px;
+        margin-left: 120px;    
+    } #hydra-key {
+        position: absolute;
+        top: 120px;
+        margin-left: 250px;
+    } #spc-key {
+        position: absolute;
+        top: 120px;
+        margin-left: 410px;
+}
+
+
+/*        MERCADO    */
+
+#mercado-div {
+    display: none;
+}
+
+#mercado-div input, #mercado-div button {
+    position: relative;
+    left: 130px;
+    top: -50px;
+    width: 200px;
+} #mercado-div button {
+    width: 50px;
+    margin-left: 0px;
+    } #mercado-div button:hover {
+        background-color: black;
+        color: white;
+        border-color: transparent;
+    }
+
+
+/*       SAS         */
+
+video {
+    position: absolute;
+    left: 670px;
+    top: 10px;
+}

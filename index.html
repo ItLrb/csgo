@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CsGo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/10ec0db383.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <!-- BARRA LATERAL ESQUERDA-->
+
+<div class="side-icons">
+    <div class="sidebar"></div>
+    <ul>
+        <li><a href="/csgo/index.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a></li>
+
+        <li><a href="/csgo/play.html"><i class="fa-solid fa-circle-play" style="color: #ffffff;"></i></a></li>
+
+        <li><i class="fa-solid fa-tower-broadcast" style="color: #ffffff;"></i></li>
+
+        <li><a href="/csgo/inventory.html">
+            <i class="fa-solid fa-suitcase" style="color: #ffffff;"></i></a></li>
+
+        <li><i class="fa-solid fa-tv" style="color: #ffffff;"></i></li>
+
+        <li><a href="/csgo/config.html">
+            <i class="fa-solid fa-gear" style="color: #ffffff;"></i></a></li>
+
+        <button onclick="exibirDiv()"><i class="fa-solid fa-power-off" style="color: #ffffff;"></i></button>
+    </ul>
+</div>
+
+ <!-- BARRA LATERAL DIREITA -->
+
+<div class="sidebar-right" onmouseover="expandSidebar()" onmouseout="collapseSidebar()">
+    <i class="fa-solid fa-user-secret" style="color: #ffffff;"></i>
+    <abbr title="Recruta"><i class="fa-solid fa-angle-up" style="color: #d4af37;"></i></abbr>
+    <abbr title="Prata I"><i class="fa-solid fa-angle-right" style="color: #c0c0c0;"></i></abbr>
+    <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+    <i class="fa-solid fa-user2" style="color: #ffffff;"></i>
+    <i class="fa-solid fa-circle-info"></i>
+    <span class="sidebar-text">Cleiton Rasha Cabesa</span>
+    <span class="sidebar-friends">Você ainda não tem amigos.</span>
+</div>
+
+
+
+
+<div id="exit" class="exit">
+    <h1>Sair do jogo</h1>
+    <p>Você tem certeza que deseja sair do jogo?</p>
+    <a href="https://www.counter-strike.net/news"><button onclick="ocultarDiv()" class="sim">Sim</button></a>
+    <button onclick="ocultarDiv()" class="nao">Não</button>
+</div>
+
+<div class="infos">
+    <h6 style="position: relative; font: normal, bolder, 30px, sans-serif; left: 10px;">Novidades</h6>
+    <section class="itens-info">
+        <main><img src="/csgo/img/cs2.jpeg" alt="Counter-Strike2" width="200" height="140"></main><p>
+            <span class="date">1981-12-13 12:00:00</span> <br>
+            <span class="news-title">New era: Counter-Strike 2</span> <br>
+            <span class="text-news">
+                O beta do Cs2 foi aberto para
+                    apenas alguns jogadores escolhidos.
+            </span> <br>
+            <a target="_blank" href="https://www.counter-strike.net/newsentry/3702568031467132888" 
+            class="leia-mais">Leia mais <span class="arrow-d">&rarr;</span></a>
+        </p>
+    </section>
+    <section class="itens-info">
+        <main class="vita"><img src="/csgo/img/vitality.jpeg" alt="Vitaly Champion" width="200" height="140"><p>
+            <span class="date">2023-05-31 20:20:00</span> <br>
+            <span class="news-title">Team vitality - Campeã Mundial</span> <br>
+            <span class="text-news">
+                Parabéns à Team Vitality, campeã do Mundial Paris 2023 da BLAST.TV!
+            </span> <br>
+            <a target="_blank" href="https://www.counter-strike.net/newsentry/3702568031467132888" 
+            class="leia-mais">Leia mais <span class="arrow-d">&rarr;</span></a>
+        </p>
+    </main>
+    </section>
+    <!-- <section class="item-infos">
+        <main><img src="/csgo/img/cs2.jpeg" alt="Counter-Strike2" width="200" height="140"></main><p>
+            <span class="date">1981-12-13 12:00:00</span> <br>
+            <span class="news-title">New era: Counter-Strike 2</span> <br>
+            <span class="text-news">
+                O beta do Cs2 foi aberto para
+                    apenas alguns jogadores escolhidos.
+            </span> <br>
+            <a target="_blank" href="https://www.counter-strike.net/newsentry/3702568031467132888" 
+            class="leia-mais">Leia mais <span class="arrow-d">&rarr;</span></a>
+        </p>
+    </section> -->
+</div>
+<div class="sales">
+        <!-- ABAS DA PROMOÇÃO-->
+    <nav class="abas">
+        <p id="cupons"><a href="#"onclick="ocultarLoja(), exibirCupons(), ocultarKeys(), ocultarMercado()">Cupons</a></p>
+        <p id="loja"><a href="#" onclick="exibirLoja(), ocultarCupons(), ocultarKeys(), ocultarMercado()">Loja</a></p>
+        <p id="keys"><a href="#" onclick="ocultarLoja(), ocultarCupons(), exibirKeys(), ocultarMercado()">Keys</a></p> 
+        <p id="mercado"><a href="#" onclick="ocultarLoja(), ocultarCupons(), ocultarKeys(), exibirMercado()">Mercado</a></p>
+    </nav>
+
+    <div id="cupons-div">
+        <p id="capsule">Chicken Capsule</p><p class="valor">R$0.50</p>
+        <p id="soundtrak"><abbr title="Statrak&trade; Radicals Soundtrak"><strong>Statrak&trade;</strong>Radicals...</abbr> <br>
+            <span class="valor"> <strong>-40%</strong> R$50.99</span></p>
+        <p id="feral-sticker">Feral Predator Sticker <br><span class="valor">R$9.99</span></p>
+    </div>
+    <div id="keys-div">
+        <p id="clutch-key">Chave Clutch <br><span class="valor">R$10.99</span></p>
+        <p id="spc2-key">Chave Spectrum 2 <br><span class="valor">R$10.99</span></p>
+        <p id="hydra-key">Chave Operação Hydra <br><span class="valor">R$10.99</span></p>
+        <p id="spc-key"><abbr title="Chave Spectrum">Chave ...</abbr><br><span class="valor">R$10.99</span></p>
+    </div>
+    <div id="mercado-div">
+        <form id="searchForm" class="search-form" action="https://steamcommunity.com/market/" target="_blank">
+            <input id="searchInput" type="text" class="search-input" placeholder="Pesquise por uma skin">
+            <button type="submit" class="search-button">
+              <i class="fas fa-search"></i>
+        </button>
+        </form>
+    </div>
+    <div id="loja-div">
+        <p id="pct-anubis">Pacote Anubis <br><span class="valor">R$13.99</span></p>
+        <p id="pct-mirage">Pacote Mirage <br><span class="valor">R$13.99</span></p>
+        <p id="pct-inferno">Pacote Inferno <br><span class="valor">R$13.99</span></p>
+        <p id="pct-cobble">Pacote Cobbllestone <br><span class="valor">R$30.99</span></p>
+    </div>
+</div>
+
+
+    <section>
+        <video src="/csgo/img/sascortado.mp4" width="700" height="700"  loop></video>
+    </section>
+    
+</body>
+</html>
