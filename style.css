@@ -157,10 +157,15 @@ body {
 
 /*     CONFIG GERAL SIDEBAR RIGHT      */
 
+.sidebar-right li {
+    list-style: none;
+}
+
 .sidebar-right i {
     position: relative;
     z-index: 1;
     cursor: pointer;
+    right: 30px;
 }
     .fa-user-secret {
         font-size: 40px;
@@ -172,12 +177,12 @@ body {
         .fa-angle-up {
             top: 20px;
             font-size: 35px;
-            right: -18px;
+            left: -20px;
         }
         .fa-angle-right {
             top: 50px;
             font-size: 20px;
-            right: -6.5px;
+            left: -32px;
             border-top: 2px solid rgba(24, 24, 24, 0.801);
             border-bottom: 2px solid rgba(24, 24, 24, 0.801);
             border-radius: 4px;
@@ -189,14 +194,14 @@ body {
         }
             .fa-user {
                 top: 70px;
-                right: -1px;
+                left: -35px;
                 padding: 19px;
                 font-size: 35px;
                 border-top: 1px solid rgba(255, 255, 255,.1);
             }
             .fa-user2 {
                 top: 15px;
-                right: -11px;
+                left: -26px;
                 padding: 25px;
                 font-size: 20px;
                 border-bottom: 3px solid white;
@@ -206,7 +211,7 @@ body {
         .fa-circle-info {
             color: rgba(255, 255, 255, 0.479);
             top: 5em;
-            right: -21px;
+            left: -15px;
             font-size: 30px;
         }
 
