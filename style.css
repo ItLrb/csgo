@@ -83,7 +83,7 @@ body {
 
 .sidebar-right {
     position: absolute;
-    background-color: rgb(46, 46, 46);
+    background-color: rgba(46, 46, 46, 0.623);
     right: 1px;
     top: 1px;
     width: 70px;
@@ -97,18 +97,19 @@ body {
 }   .sidebar-right.expanded .fa-user-secret {
         position: relative;
         margin: auto;
-        left: 15px;
-        top: 10px;   
+        left: -30px;
+        top: 7px;   
     }
 
 .sidebar-right.expanded .fa-angle-up {
     position: relative;
-    left: 100px;
-    top: 65px;
+    font-size: 45px;
+    left: -15px;
+    top: 27px;
 }   .sidebar-right.expanded .fa-angle-right {
         position: relative;
-        left: -55px;
-        top: 125px;
+        left: -25px;
+        top: 65px;
         padding: 6px 53px;
         font-size: 25px;
     }   
@@ -123,9 +124,20 @@ body {
         }   
             .sidebar-right.expanded .fa-circle-info {
                 position: relative;
-                top: 325px;
-                left: -100px;
+                top: 150px;
+                left: -15px;
             }
+
+.sidebar-right.expanded #recruta {
+    position: relative;
+    top: -442px;
+    padding-left: 35px;
+} .sidebar-right.expanded #prata {
+    position: relative;
+    top: -374px;
+    left: 120px;
+}
+
 
 
 /*       TEXTO BARRA LATERAL EXPANDIDA       */
@@ -138,17 +150,19 @@ body {
 .sidebar-right.expanded .sidebar-text {
     position: relative;    
     font-family: Arial, Helvetica, sans-serif;
-    left: 75px;
-    top: -85px;
+    left: 30px;
+    top: -260px;
     color: rgb(255, 255, 255);
     display: inline-block; /* Exibe o texto quando a barra lateral estiver expandida */
 }
 .sidebar-right.expanded .sidebar-friends {
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
-    left: 60px;
-    top: 265px;
+    left: 26px;
+    top: -90px;
     color: rgba(255, 255, 255, 0.479);
+    border-top: 1px solid rgba(255, 255, 255,.1);
+    padding-top: 200px;
     display: inline-block;
 }
 
@@ -222,7 +236,7 @@ body {
     display: none;
     left: 550px;
     top: -200px;
-    z-index: 3;
+    z-index: 4;
 }
 .exit p, h1{
     position: relative;
