@@ -161,9 +161,14 @@ body {
     left: 26px;
     top: -90px;
     color: rgba(255, 255, 255, 0.479);
-    border-top: 1px solid rgba(255, 255, 255,.1);
-    padding-top: 200px;
+    margin-top: 200px;
     display: inline-block;
+} .sidebar-right.expanded .line {
+    border-color: rgba(255, 255, 255,.1);
+    position: relative;
+    left: -18px;
+    top: -350px;
+    width: 223px;
 }
 
 
