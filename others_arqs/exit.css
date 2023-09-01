@@ -9,7 +9,7 @@
     top: -200px;
     z-index: 4;
 }
-.exit p, h1{
+.exit p, div.exit > h1{
     position: relative;
     font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     color:  rgb(255, 255, 255);
@@ -17,7 +17,7 @@
     margin-left: 7px;
 }
 
-h1 {
+div.exit > h1 {
     background-color: rgb(15, 15, 15);
     padding-left: 20px;
     top: -75px;
@@ -26,7 +26,7 @@ h1 {
     border-right: 1px solid rgba(255, 255, 255,.1);
 }
 
-.exit p {
+.exit > p {
     font-size: 20px;
     top: -60px;
 }
@@ -40,7 +40,7 @@ h1 {
     height: 110px;
     border-right: 1px solid rgba(255, 255, 255,.1);
 }
-.exit button {
+.exit > button, .exit > a > button {
     position: relative;
     top: -80px;
     left: 250px;
@@ -51,7 +51,7 @@ h1 {
     cursor: pointer;
     padding: 5px;
 }
-.exit button:hover {
+.exit > button:hover, .exit > a > button:hover {
     background-color: rgb(15, 15, 15);
 }
 .sim {
