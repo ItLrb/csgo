@@ -4,10 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play</title>
-    <script src="https://kit.fontawesome.com/10ec0db383.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/others_arqs/sidebar-r.css">
+    <link rel="stylesheet" href="/others_arqs/sidebar-l.css">
+    <link rel="stylesheet" href="/others_arqs/exit.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p style="color: white;">ainda vou fazer kkcalma la meu filho</p>
+    <!-- SIDEBAR RIGHT  -->
+    <div class="sidebar-right" onmouseover="expandSidebar()" onmouseout="collapseSidebar()">
+        <ul>
+            <li><i class="fa-solid fa-user-secret" style="color: #ffffff;"></i></li>
+            <li><abbr title="Recruta"><i class="fa-solid fa-angle-up" style="color: #d4af37;"></i></abbr></li>
+            <li><abbr title="Prata I"><i class="fa-solid fa-angle-right" style="color: #c0c0c0;"></i></abbr></li>
+            <li><i class="fa-solid fa-user" style="color: #ffffff;"></i></li>
+            <li><i class="fa-solid fa-user2" style="color: #ffffff;"></i></li>
+            <li><i class="fa-solid fa-circle-info"></i></li>
+            <li><span class="sidebar-text">Cleiton Rasha Cabesa</span></li>
+            <li><span class="sidebar-friends">Você ainda não tem amigos.</span></li>
+            <li><span class="sidebar-text" id="recruta">Recruta</span></li>
+            <li><span class="sidebar-text" id="prata">Prata I</span></li>
+            <li><hr class="line"></li>
+        </ul>
+    </div>
+
+    <!-- SIDEBAR LEFT  -->
+    <div class="side-icons">
+        <div class="sidebar"></div>
+        <ul>
+            <li><a href="/index.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a></li>
+    
+            <li><a href="/play.html"><i class="fa-solid fa-circle-play" style="color: #ffffff;"></i></a></li>
+    
+            <li><i class="fa-solid fa-tower-broadcast" style="color: #ffffff;"></i></li>
+    
+            <li><a href="/inventory.html">
+                <i class="fa-solid fa-suitcase" style="color: #ffffff;"></i></a></li>
+    
+            <li><i class="fa-solid fa-tv" style="color: #ffffff;"></i></li>
+    
+            <li><a href="/config.html">
+                <i class="fa-solid fa-gear" style="color: #ffffff;"></i></a></li>
+    
+            <button onclick="exibirDiv()"><i class="fa-solid fa-power-off" style="color: #ffffff;"></i></button>
+        </ul>
+    </div>
+
+    <!-- SAIDA E CONFIRMAÇÃO  -->
+    <div id="exit" class="exit">
+        <h1>Sair do jogo</h1>
+        <p>Você tem certeza que deseja sair do jogo?</p>
+        <a href="https://www.counter-strike.net/news"><button onclick="ocultarDiv()" class="sim">Sim</button></a>
+        <button onclick="ocultarDiv()" class="nao">Não</button>
+    </div>
+
+    <script src="https://kit.fontawesome.com/10ec0db383.js" crossorigin="anonymous"></script>
 </body>
 </html>

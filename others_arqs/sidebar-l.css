@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+.sidebar {
+    position: absolute;
+    background-color: rgb(46, 46, 46);
+    left: 2px;
+    top: 1px;
+    width: 60px;
+    height: 99.7%;
+}
+
+/* ICONS SIDE BAR-LEFT */
+
+.side-icons i {
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+    .fa-house {
+        top: 7px;
+        left: -46px;
+        padding: 15.25px;
+        font-size: 25px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        /* border: solid black;
+        border-width: 3px;
+         */
+    }
+    .fa-circle-play {
+        top: 7px;
+        left: -46px;
+        padding: 13.7px;
+        font-size: 33px;
+        border-top: 1px solid rgba(255, 255, 255,.1);
+        /* border: solid black;
+        border-width: 3px;
+         */
+    }
+    .fa-tower-broadcast {
+        top: 7px;
+        left: -46px;
+        padding: 17.25px;
+        border-bottom: 1px solid rgba(36, 36, 36, 0.788);
+        font-size: 22px;
+    }
+    .fa-suitcase {
+        top: 7px;
+        left: -46px;
+        padding: 17.25px;
+        font-size: 25px;
+        border-top: 1px solid rgba(255, 255, 255,.1);
+    }
+    .fa-tv {
+        top: 7px;
+        left: -46px;
+        padding: 18px;
+        font-size: 22px;
+    }
+    
+    .fa-gear {
+        top: 7px;
+        left: -46px;
+        padding: 22px;
+        font-size: 21px;
+    }
+    .fa-power-off {
+        top: 320px;
+        left: -55px;
+        padding: 15px;
+        font-size: 30px;
+    }
+        .side-icons button {
+            background-color: transparent;
+            border-color: transparent;
+        }

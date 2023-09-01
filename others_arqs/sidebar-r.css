@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+.sidebar-right {
+    position: absolute;
+    background-color: rgba(46, 46, 46, 0.623);
+    right: -1px;
+    top: 1px;
+    width: 70px;
+    height: 99.7%;
+    z-index: 1;
+} 
+/*     SIDE BAR EXPANDED       */
+
+.sidebar-right.expanded {
+    width: 270px;
+}   .sidebar-right.expanded .fa-user-secret {
+        position: relative;
+        margin: auto;
+        left: -30px;
+        top: 7px;   
+    }
+
+.sidebar-right.expanded .fa-angle-up {
+    position: relative;
+    font-size: 45px;
+    left: -15px;
+    top: 27px;
+}   .sidebar-right.expanded .fa-angle-right {
+        position: relative;
+        left: -25px;
+        top: 65px;
+        padding: 6px 53px;
+        font-size: 25px;
+    }   
+    .sidebar-right.expanded .fa-user {
+            position: relative;
+            left: 2000px;
+            top: 160px;
+    } 
+        .sidebar-right.expanded .fa-user2 {
+            position: relative;
+            left: 2000px;
+        }   
+            .sidebar-right.expanded .fa-circle-info {
+                position: relative;
+                top: 150px;
+                left: -15px;
+            }
+
+.sidebar-right.expanded #recruta {
+    position: relative;
+    top: -442px;
+    padding-left: 35px;
+} .sidebar-right.expanded #prata {
+    position: relative;
+    top: -374px;
+    left: 120px;
+}
+
+
+
+/*       TEXTO BARRA LATERAL EXPANDIDA       */
+
+.sidebar-text, .sidebar-friends {
+    color: black;
+    display: none; /* Oculta o texto inicialmente */
+}
+    
+.sidebar-right.expanded .sidebar-text {
+    position: relative;    
+    font-family: Arial, Helvetica, sans-serif;
+    left: 30px;
+    top: -260px;
+    color: rgb(255, 255, 255);
+    display: inline-block; /* Exibe o texto quando a barra lateral estiver expandida */
+}
+.sidebar-right.expanded .sidebar-friends {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 26px;
+    top: -90px;
+    color: rgba(255, 255, 255, 0.479);
+    margin-top: 200px;
+    display: inline-block;
+} .sidebar-right.expanded .line {
+    border-color: rgba(255, 255, 255,.1);
+    position: relative;
+    left: -18px;
+    top: -350px;
+    width: 223px;
+}
+
+
+
+
+/*     CONFIG GERAL SIDEBAR RIGHT      */
+
+.sidebar-right li {
+    list-style: none;
+}
+
+.sidebar-right i {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    right: 30px;
+}
+    .fa-user-secret {
+        font-size: 40px;
+        border: 1.75px solid black;
+        padding: 5px;
+        top: 7px;
+        right: -10px;
+    }
+        .fa-angle-up {
+            top: 20px;
+            font-size: 35px;
+            left: -20px;
+        }
+        .fa-angle-right {
+            top: 50px;
+            font-size: 20px;
+            left: -32px;
+            border-top: 2px solid rgba(24, 24, 24, 0.801);
+            border-bottom: 2px solid rgba(24, 24, 24, 0.801);
+            border-radius: 4px;
+            background-color: rgba(24, 24, 24, 0.801);
+            padding-right: 22px;
+            padding-left: 22px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+            .fa-user {
+                top: 70px;
+                left: -35px;
+                padding: 19px;
+                font-size: 35px;
+                border-top: 1px solid rgba(255, 255, 255,.1);
+            }
+            .fa-user2 {
+                top: 15px;
+                left: -26px;
+                padding: 25px;
+                font-size: 20px;
+                border-bottom: 3px solid white;
+                border-radius: 5px;
+                border-radius: 5px;
+            }
+        .fa-circle-info {
+            color: rgba(255, 255, 255, 0.479);
+            top: 5em;
+            left: -15px;
+            font-size: 30px;
+        }
